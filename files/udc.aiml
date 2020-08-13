@@ -7,17 +7,17 @@
     <template>Welcome! I will be helping you think of possible career paths and will be asking you a few questions.
     <reply>
         <text>I am ready to begin!</text>
-        <postback>First Question</postback>
+        <postback>web developer</postback>
     </reply>
     </template>
   </category>
   
   <category>
-    <pattern>First Question</pattern>
+    <pattern>web developer</pattern>
     <template>Do you see yourself working on web applications?
     <reply>
         <text>Yes</text>
-        <postback>web developer</postback>
+        <postback>web developer 2</postback>
     </reply>
     <reply>
         <text>No</text>
@@ -27,6 +27,12 @@
         <text>Restart</text>
         <postback>start</postback>
     </reply>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>web developer 2</pattern>
+    <template>The recommended career path for you: Web Developer!
     </template>
   </category>
   
@@ -131,7 +137,7 @@
     <template>Sorry, we could not find a match for you. Would you like to try again?
     <reply>
         <text>Yes</text>
-        <postback>First Question</postback>
+        <postback>web developer</postback>
     </reply>
     <reply>
         <text>No</text>
