@@ -3,110 +3,144 @@
   
   
   <category>
-    <pattern>Start</pattern>
+    <pattern>start</pattern>
     <template>Welcome! I will be helping you think of possible career paths and will be asking you a few questions.
-    <button>
-        <text>Yes! I am ready to begin!</text>
+    <reply>
+        <text>I am ready to begin!</text>
         <postback>First Question</postback>
-    </button>
+    </reply>
     </template>
   </category>
   
   <category>
     <pattern>First Question</pattern>
     <template>Do you see yourself working on web applications?
-    <button>
+    <reply>
         <text>Yes</text>
         <postback>web developer</postback>
-    </button>
-    <button>
+    </reply>
+    <reply>
         <text>No</text>
         <postback>game developer</postback>
-    </button>
-    </template>
-  </category>
-  
-  <category>
-    <pattern>First Question</pattern>
-    <template>Do you see yourself working on web applications?
-    <button>
-        <text>Yes</text>
-        <postback>web developer</postback>
-    </button>
-    <button>
-        <text>No</text>
-        <postback>game developer</postback>
-    </button>
+    </reply>
+    <reply>
+        <text>Restart</text>
+        <postback>start</postback>
+    </reply>
     </template>
   </category>
   
   <category>
     <pattern>game developer</pattern>
     <template>Do you see yourself working on video game applications?
-    <button>
+    <reply>
         <text>Yes</text>
         <postback>game developer 2</postback>
-    </button>
-    <button>
+    </reply>
+    <reply>
         <text>No</text>
-        <postback>system engineer</postback>
-    </button>
+        <postback>systems engineer</postback>
+    </reply>
+    <reply>
+        <text>Restart</text>
+        <postback>start</postback>
+    </reply>
     </template>
   </category>
   
   <category>
-    <pattern>system engineer</pattern>
+    <pattern>game developer 2</pattern>
+    <template>The recommended career path for you: Game Developer!
+    </template>
+  </category>
+  
+  <category>
+    <pattern>systems engineer</pattern>
     <template>Are you interested in developing systems that create products from start to finish?
-    <button>
+    <reply>
         <text>Yes</text>
-        <postback>system engineer 2</postback>
-    </button>
-    <button>
+        <postback>systems engineer 2</postback>
+    </reply>
+    <reply>
         <text>No</text>
         <postback>network engineer</postback>
-    </button>
+    </reply>
+    <reply>
+        <text>Restart</text>
+        <postback>start</postback>
+    </reply>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>systems engineer 2</pattern>
+    <template>The recommended career for you: Systems Engineer!
     </template>
   </category>
   
   <category>
     <pattern>network engineer</pattern>
     <template>Are you interested in learning and designing computer networks?
-    <button>
+    <reply>
         <text>Yes</text>
         <postback>network engineer 2</postback>
-    </button>
-    <button>
+    </reply>
+    <reply>
         <text>No</text>
         <postback>manager</postback>
-    </button>
+    </reply>
+    <reply>
+        <text>Restart</text>
+        <postback>start</postback>
+    </reply>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>network engineer 2</pattern>
+    <template>The recommended career for you: Network Engineer!
     </template>
   </category>
   
   <category>
     <pattern>manager</pattern>
     <template>Are you an effective communicator and see yourself managing others?
-    <button>
+    <reply>
         <text>Yes</text>
         <postback>manager 2</postback>
-    </button>
-    <button>
+    </reply>
+    <reply>
         <text>No</text>
         <postback>reset</postback>
-    </button>
+    </reply>
+    <reply>
+        <text>Restart</text>
+        <postback>start</postback>
+    </reply>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>manager 2</pattern>
+    <template>The recommended career for you: IT Manager!
     </template>
   </category>
   
   <category>
     <pattern>reset</pattern>
     <template>Sorry, we could not find a match for you. Would you like to try again?
-    <button>
+    <reply>
         <text>Yes</text>
         <postback>First Question</postback>
-    </button>
-    <button>
+    </reply>
+    <reply>
         <text>No</text>
         <postback>goodbye</postback>
-    </button>
+    </reply>
+    <reply>
+        <text>Restart</text>
+        <postback>start</postback>
+    </reply>
     </template>
   </category>
   
